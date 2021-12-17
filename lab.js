@@ -77,35 +77,20 @@ for (let i = letters.length - 1; i >= 0; i--) {
 // Problem 10
 let letterGrade = 'B'
 
-/* Use a switch statement on 'letterGrade' and console.log the appropriate response.
-
-If A: "The student is doing excellently."
-If B: "The student is doing well."
-If C: "The student is doing alright."
-If D: "The student is not doing very well."
-If F: "The student is failing."
-If the letter grade is not one of the above letters, console.log 'Not an eligible grade.'
-*/
-
 switch (letterGrade) {
-  case 1: 
-  letterGrade = 'A'  
+  case 'A': 
   console.log('The student is doing excellently.')
   break;
-  case 2: 
-  letterGrade = 'B'  
+  case 'B': 
   console.log('The student is doing well.')
   break;
-  case 3: 
-  letterGrade = 'C'  
+  case 'C': 
   console.log('The student is doing alright.')
   break;
-  case 4: 
-  letterGrade = 'D'  
+  case 'D': 
   console.log('The student is not doing very well.')
   break;
-  case 5: 
-  letterGrade = 'F'  
+  case 'F': 
   console.log('The student is failing.')
   break;
   default: console.log('Not an eligible grade.')
