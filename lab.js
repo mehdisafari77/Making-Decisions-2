@@ -74,14 +74,8 @@ for (let i = letters.length - 1; i >= 0; i--) {
 }
 
 
-////////// Advanced Problems //////////
-
-////////// PROBLEM 10 //////////
-// Switch statements can be excellent alternatives to if blocks. Look up switch statements (I recommend W3 Schools) and try to implement one for the following.
-
-// Do not edit the code below.
+// Problem 10
 let letterGrade = 'B'
-// Do not edit the code above.
 
 /* Use a switch statement on 'letterGrade' and console.log the appropriate response.
 
@@ -93,32 +87,41 @@ If F: "The student is failing."
 If the letter grade is not one of the above letters, console.log 'Not an eligible grade.'
 */
 
-//Code Here
+switch (letterGrade) {
+  case 1: 
+  letterGrade = 'A'  
+  console.log('The student is doing excellently.')
+  break;
+  case 2: 
+  letterGrade = 'B'  
+  console.log('The student is doing well.')
+  break;
+  case 3: 
+  letterGrade = 'C'  
+  console.log('The student is doing alright.')
+  break;
+  case 4: 
+  letterGrade = 'D'  
+  console.log('The student is not doing very well.')
+  break;
+  case 5: 
+  letterGrade = 'F'  
+  console.log('The student is failing.')
+  break;
+  default: console.log('Not an eligible grade.')
+}
 
 
+// Problem 11
 
-////////// PROBLEM 11 //////////
-/* The famous FizzBuzz, Devmountain style!
-  Create a for loop that iterates from 1 to 100. In this for loop, using some conditional logic, if the number your for loop is currently on is divisible by 3, console.log 'Dev'. If the number is divisible by 5, console.log 'mountain'. If the number is divisible by 5 & 3, console.log 'Devmountain'. If the number is not divisible by 5 or 3, console.log the number itself. Hint: Look up the modulo operator.
-
-  Your output should look like:
-  1
-  2
-  Dev
-  4
-  Mountain
-  Dev
-  7
-  8
-  Dev
-  mountain
-  11
-  Dev
-  13
-  14
-  Devmountain
-  16
-  ...
-*/
-
-//Code Here
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log('Devmountain')
+  } else if (i % 5 === 0) {
+    console.log('mountain')
+  } else if (i % 3 === 0) {
+    console.log('Dev')
+  } else {
+    console.log(i)
+  }
+}
